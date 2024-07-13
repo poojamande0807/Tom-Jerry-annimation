@@ -1,0 +1,45 @@
+body{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,91,1) 100%);    justify-content: center;
+    align-items: center;
+  
+}
+.container{
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.tom, .jerry {
+    position: absolute;
+}
+.tom {
+    animation: moveTom 7s linear infinite;
+}
+.jerry {
+    animation: moveJerry 7s linear infinite;
+}
+@keyframes moveTom {
+    0% { left: -100px; }
+    50% { left: calc(100% - 100px); }
+    100% { left: -100px; }
+}
+@keyframes moveJerry {
+    0% { right: -100px; }
+    50% { right: calc(100% - 100px); }
+    100% { right: -100px; }
+}
+.tom img{
+    height: 400px;
+}
+.jerry img{
+    height: 400px;
+}
